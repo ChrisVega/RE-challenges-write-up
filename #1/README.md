@@ -1,9 +1,9 @@
-RE #1
+# RE #1
 
-Task:
+### Task:
 - Figure out what the code does.
  
-Procedure: 
+### Procedure: 
 
 I tackled this in two parts, first the arguments and then the loop.
 
