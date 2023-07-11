@@ -26,7 +26,7 @@ or 0xE425 in little endian. Looking online it seems like crc-16 is sometimes use
 causing a hash collison. 
 
 I found a crc-16 implementation for python, and confimed it gave the same value when putting in "Dennis Yurichev". I then gave it a new username “Chris Vega     “ 
-whith extra padding to make it the same length. I then wrote a pythonscript to increment the ASCII vlaues for the padded protions, run it through crc-16, and compare it with 0x25E4 until we got a match. 
+whith extra padding to make it the same length. I then wrote a python script to increment the ASCII vlaues for the padded protions, run it through crc-16, and compare it with 0x25E4 until we got a match. 
 After a few second the code retuned the username “Chris Vega  (8S” as a match. When the program was run with the modified key file it resulted in the username passing!
 
 
