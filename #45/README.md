@@ -20,7 +20,7 @@ Here we see that the output of a function is compared with 0x0E425 and if it fai
 
 At first it stumped me because it seemed very odd. I had no idea what algorithim this was and why it was XORING values repeatedly.  
 In this portion, we can see 0x8408 is called multiple times, and in the full code is goes futher. Googleing this value brings up results referencing the CRC-16 algorithim. 
-I’ve never seen this algorithim before, bu after looking at a few implementations it seems like it may be similar. 
+I’ve never seen this algorithim before, but after looking at a few implementations it seems like it may be similar. 
 Using this CRC16 calculator (https://crccalc.com/) and putting in the username "Dennis Yurichev" if we scroll down to CRC-16/x-25 we see that we get a value of 0x25E4, 
 or 0xE425 in little endian. Looking online it seems like crc-16 is sometimes used as a hashfunction. My idea is then can we get another username that can prodice the same output when put into crc-16, 
 causing a hash collison. 
