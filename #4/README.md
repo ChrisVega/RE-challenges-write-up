@@ -6,7 +6,6 @@
  
 ### Procedure: 
 1) Like challenge 2, we are performing a set of bitwise operations by shifting and applying a mask. For this I went straight to recreating the code functionality in python (see chall4_script.py). 
-
 I first tested the test value 11254 (10101111110110) and got the output 00010000001010. I was a bit confused, so I tried some other test values. I tried a few random numbers before counting up from one before trying a few other values. 
 From what we can see in the table it seems like the code is counting the number of ‘1’s in a binary string. 
 
