@@ -1,5 +1,5 @@
 def main(value):
-    value = ((value & 0xFF000000) >> 24) | ((value & 0x00FF0000) >> 8) | ((value & 0x0000FF00) << 8) | ((value & 0x000000FF) << 24) #bswap
+    value = ((value & 0xFF000000) >> 24) | ((value & 0x00FF0000) >> 8) | ((value & 0x0000FF00) << 8) | ((value & 0x000000FF) << 24) #bswap selects the bytes using FF & and then moves them to the other side using shift.
     print("{0:b}".format(value, '016b').zfill(32))
     value = ((value & 0xF0F0F0F) << 4) | ((value & 0xF0F0F0F0) >> 4)
     print("{0:b}".format(value, '016b').zfill(32))
